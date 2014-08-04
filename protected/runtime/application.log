@@ -1,0 +1,56 @@
+2014/08/04 09:01:14 [error] [exception.CException] exception 'CException' with message 'Alias "application.extentions.boot.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\xampp\htdocs\yii\framework\YiiBase.php:322
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\YiiBase.php(196): YiiBase::import('application.ext...', true)
+#1 D:\xampp\htdocs\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\xampp\htdocs\yii\framework\base\CModule.php(523): CModule->getComponent('boot')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(163): CModule->preloadComponents()
+#4 D:\xampp\htdocs\yii\framework\YiiBase.php(125): CApplication->__construct('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\yiiboster\index.php(13): YiiBase::createWebApplication('D:\\xampp\\htdocs...')
+#7 {main}
+REQUEST_URI=/yiiboster/
+---
+2014/08/04 09:02:32 [error] [exception.CException] exception 'CException' with message 'Alias "boot.widgets.TbButton" is invalid. Make sure it points to an existing directory or file.' in D:\xampp\htdocs\yii\framework\YiiBase.php:347
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('boot.widgets.Tb...', true)
+#1 D:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'boot.widgets.Tb...', Array)
+#2 D:\xampp\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('boot.widgets.Tb...', Array)
+#3 D:\xampp\htdocs\yiiboster\protected\views\site\index.php(18): CBaseController->widget('boot.widgets.Tb...', Array)
+#4 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', NULL, true)
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', NULL, true)
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 D:\xampp\htdocs\yiiboster\protected\controllers\SiteController.php(32): CController->render('index')
+#9 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\yiiboster\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiboster/
+---
+2014/08/04 09:03:08 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.TbButton" is invalid. Make sure it points to an existing directory or file.' in D:\xampp\htdocs\yii\framework\YiiBase.php:347
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('booster.widgets...', true)
+#1 D:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'booster.widgets...', Array)
+#2 D:\xampp\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#3 D:\xampp\htdocs\yiiboster\protected\views\site\index.php(18): CBaseController->widget('booster.widgets...', Array)
+#4 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\xampp\\htdocs...', NULL, true)
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\xampp\\htdocs...', NULL, true)
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 D:\xampp\htdocs\yiiboster\protected\controllers\SiteController.php(32): CController->render('index')
+#9 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 D:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\yiiboster\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiiboster/
+---
